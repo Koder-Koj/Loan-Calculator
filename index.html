@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>LoanCalculator</title>
+</head>
+
+<body>
+    <section id="main_section">
+        <div class="header">
+            <h1>Loan Calculator</h1>
+        </div>
+        <div class="form_section">
+            <form action="">
+                <div class="form_inputs">
+                    <label for="loan">Loan Amount:</label>
+                    <span>$</span><input type="number" name="loan" id="loan" required>
+                </div>
+                <div class="form_inputs">
+                    <label for="interest">Interest:</label>
+                    <span>$</span><input type="number" name="interest" id="interest" required>
+                </div>
+                <div class="form_inputs">
+                    <label for="amortization">Amortization Period:</label>
+                    <span class="hidden">$</span><select name="amortzation" id="amortization">
+                        <option value=""></option>
+                        <option value="10">10</option>
+                        <option value="20">20</option>
+                        <option value="30">30</option>
+                    </select>
+
+                </div>
+                <div class="form_inputs">
+                    <label for="frequency">Payment Frequency:</label>
+                    <span class="hidden">$</span><select name="frequency" id="frequency">
+                        <option value=""></option>
+                        <option value="weekly">weekly</option>
+                        <option value="bi-weekly">bi-weekly</option>
+                        <option value="semi-monthly">semi-monthly</option>
+                        <option class="frequency_monthly" value="monthly">monthly</option>
+                    </select>
+                </div>
+                <div class="form_inputs">
+                    <label for="Term">Term:</label>
+                    <span class="hidden">$</span><select name="term" id="">
+                        <option value=""></option>
+                        <option value="1 year">1 year</option>
+                        <option value="2 year">2 year</option>
+                        <option value="3 year">3 year</option>
+                        <option value="4 year">4 year</option>
+                        <option value="5 year">5 year</option>
+                    </select>
+                </div>
+                <div class="form_inputs">
+                    <label for="payment">Mortgage Payment</label>
+                    <span>$</span><input type="number" name="payment" id="payment">
+                </div>
+            </form>
+            <div class="main_btn">
+                <button class="btn">Calculate</button>
+            </div>
+
+        </div>
+    </section>
+
+</body>
+<script src="js/script.js"></script>
+
+</html>
