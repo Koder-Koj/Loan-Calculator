@@ -18,12 +18,12 @@ btn.addEventListener('click', function () {
     const frequency = document.querySelector('#frequency').value;
     const frequencyOption = document.querySelector('.frequency_monthly');
     const frequencyCalc = function () {
-        if (frequency == 'monthly') {
-            frequency = '';
-            frequency = '12';
-            frequencyOption.removeAttribute('value', 'monthly');
+        if (frequency === 'monthly') {
+            // frequency = '';
+            frequency = 'Number(12)';
+            // frequencyOption.removeAttribute('value', 'monthly');
             frequencyOption.setAttribute('value', '12');
-        };  
+        };
         console.log(typeof (frequencyCalc));
 
     };
