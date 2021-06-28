@@ -16,20 +16,20 @@ btn.addEventListener('click', function () {
     // Mortgage Payment:
     const amortization = document.querySelector('#amortization').value;
     const frequency = document.querySelector('#frequency').value;
-    const frequencyOption = document.querySelector('.frequency_monthly');
-    const frequencyCalc = function () {
-        if (frequency === 'monthly') {
-            // frequency = '';
-            frequency = 'Number(12)';
-            // frequencyOption.removeAttribute('value', 'monthly');
-            frequencyOption.setAttribute('value', '12');
-        };
-        console.log(typeof (frequencyCalc));
+    // const frequencyOption = document.querySelector('.frequency_monthly');
+    // const frequencyCalc = function () {
+    //     if (frequency === 'monthly') {
+    //         frequency = '';
+    //         document.querySelector('select frequency_monthly').textContent = '12';
+    //         // frequencyOption.removeAttribute('value', 'monthly');
+    //         // frequencyOption.setAttribute('value', '12');
+    //     };
+    //     console.log(typeof (frequencyCalc));
 
-    };
+    // };
 
 
-    const time = Number(amortization) * Number(frequencyCalc());
+    const time = Number(amortization) * Number(function ());
     console.log(typeof (time));
     console.log(time);
     const rate = 0.03;
