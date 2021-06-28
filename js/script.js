@@ -29,7 +29,7 @@ btn.addEventListener('click', function () {
     // };
 
 
-    const time = Number(amortization) * Number(function ());
+    const time = Number(amortization) * Number(frequency);
     console.log(typeof (time));
     console.log(time);
     const rate = 0.03;
